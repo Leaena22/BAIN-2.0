@@ -55,11 +55,26 @@
 								<h2></h2>
 							</header>
 							<b>Metadaten modellieren und Schnittstellen nutzen</b><br>
-							<p> Der erste Teil des Unterrichtstages Repetition MarcEdit
-								Swissbib SRU und OAI Server</p>
+								<p> Das erste Thema nach der Rekapitulation des letzten Blocks waren die Metadaten und Schnittstellen.
+									Dazu machten wir eine Übung mit MarcEdit, wo wir Daten in andere Formate transformierten (z.B. MARC zu JSON). Diese Transformation funktioniert nur verlustfrei, wenn die Daten fehlerfrei in der Ursprungsdatei erfasst wurden.
+									Anschliessend lernte ich ein Tool kennen, von dem ich noch nie etwas gehört habe. Die SRU- und OAI- Schnittstelle von swissbib bietet eine interessante Möglichkeit zu recherchieren. Zuerst hatte ich einige Schwierigkeiten, mich zurechtzufinden, vor allem als es darum ging, den Code der Bibliothek zu finden. Da wir die Übung aber gemeinsam in der Gruppe lösten, konnten die andern mir erklären, wo ich diese Codes finde. 
+									SRU (Search/Retrieve via URL) wurde von der Library of Congress veröffentlicht. (https://www.dnb.de/DE/Professionell/Metadatendienste/Datenbezug/SRU/sru_node.html )
+									Mit diesem Standard kann man gezielt Daten in einem Bibliothekskatalog wie swisslib suchen. Die Resultate werden in XML ausgegeben, das Schema (bsp. MARC, ISAD(G) oder Dublin Core) kann man selbst bestimmen. Die XML Datei kann man anschliessend in MarcEDit oder OpenRefine importieren und weiter bearbeiten.
+									OAI-Schnittstellen (Open Archives Initiative) braucht man, um grosse Datenbestände regelmässig zu aktualisieren. (https://www.dnb.de/DE/Professionell/Metadatendienste/Datenbezug/OAI/oai_node.html )
+									So kann swissbib, was ja ein Metakatalog ist, regelmässig seine Daten mit den Katalogen der Ursprungsbibliotheken (z.B. Nebis) abgleichen und aktualisieren.</p>
 							
-							<p>VuFind</p>
-							
+							<b>VuFind</b>
+								<p>Am Nachmittag beschäftigten wir uns noch einmal mit der Suchmaschinentechnologie Solr. Diese lernten wir schon in den Übungen kennen. Diesmal würden wir sie mit VuFind, welches auf Solr basiert, sehen. Die Installation von VuFind bereitete mir allerdings einige Probleme.  Das Herunterladen des Programms war kein Problem, wenn ich jedoch VuFind im Browser öffnen wollte, der Solr Admin von den Übungen, die ich auf heute gelöst habe,
+									noch offen war. Nichts half, Solr liess sich nicht beenden. Als ich es dann endlich geschafft hatte, den Port 8080 von Solr zu «befreien», merkte ich, dass wenn ich VuFind startete, automatisch Solr sich wieder neu startete. Auch mit einem Kill-Befehl, den Port 8080 frei machte, funktionierte es nicht. Erst nach der Deinstallation von VuFind, löschen von Solr und der kompletten Neuinstallierung von VuFind funktionierte es dann endlich.
+									Kurz darauf trat der nächste Fehler auf. Das Konfigurationsfenster zeigte mir nur noch eine Fehlermeldung an. Wenigstens war ich da nicht mehr die einzige, bei der es nicht funktionierte. Mit dieser Installation verplemperten wir unglaublich viel Zeit. Falls dieses Modul je wieder im Distant Learning Modus durchgeführt werden sollte, wäre es vielleicht eine Option, die Software im vornherein zu installieren (evtl. mit einem Erklärungsvideo
+									von Herr Lohmeier oder einer Anleitung, die er dann im Unterricht erklärt) und dann Probleme schon im vornherein zu melden und/oder schon zu lösen. Da VuFind bei mir nicht funktionierte, lösten wir die Aufgabe zusammen in der Jitsi Gruppe.
+									Was ich bis jetzt von Open Source Programmen gelernt habe, sind folgende Vor- und Nachteile:
+										<ul>
+											<li>Ganz klarer Vorteil: die Programme sind frei zugänglich und werden grösstenteils von Communities weiterentwickelt. Es entsteht dadurch keine Abhängigkeit von einem Anbieter.</li>
+											<li>Nachteil: Tutorials sind oft nicht aktuell. Es gibt viele Foren, wo man sich Hilfe holen kann, aber alleine schon die Installation kann Probleme hervorrufen, die man als Laie nicht lösen kann.</li>
+											<li>Wiederum hilft das der Open Source Gemeinschaft. Menschen, die sich mit diesen Programmen sehr gut auskennen, können so Dienstleistungen anbieten und so ihr Geld verdienen.</li>
+										</ul>
+								</p>							
 						</div>
 					</div>
 				</div>
