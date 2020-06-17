@@ -39,8 +39,8 @@
 			<section id="One" class="wrapper style3">
 				<div class="inner">
 					<header class="align-center">
-						<p>Eleifend vitae urna</p>
-						<h2>Generic Page Template</h2>
+						<p>6. Juni 2020</p>
+						<h2>Block 5</h2>
 					</header>
 				</div>
 			</section>
@@ -51,8 +51,8 @@
 					<div class="box">
 						<div class="content">
 							<header class="align-center">
-								<p>maecenas sapien feugiat ex purus</p>
-								<h2>Lorem ipsum dolor</h2>
+								<p>Was ich gelernt habe: man kann Wikidata ganz verschieden Nutzen</p>
+								<h2>Metadaten anreichern mit Wikidata, Query Service und Abschluss</h2>
 							</header>
 							<p>Nach der kurzen Nachbesprechung zu gestern – Herr Lohmeier hat das Problem mit dem Konfiguartionsfenster gefunden –
 							erläuterte er noch einige Möglichkeiten für Server Software, die wir in Zukunft haben. Er zeigte uns auch, wie wir einen
@@ -63,20 +63,36 @@
 							eigenen Daten die Daten aus WikiData hinzufügen. Anhand einer Übung konnten wir das gleich selbst ausprobieren.
 							Ausnahmsweise funktionierte das ohne Probleme. Eine wirklich geniale Möglichkeit, beispielsweise Katalogisate einfach
 							anzureichern oder LinkedData voranzutreiben. Nach der Übung mit OpenRefine lernten wir noch den Wikidata Query Service
-							kennen. Mit SPARQL kann man das komplette Wikidata durchsuchen und filtern. Dazu lösten wir ein Tutorial um zu sehen, wie
-							genau das funktioniert.</p>
+							kennen. Mit SPARQL kann man das komplette Wikidata durchsuchen und filtern. Dazu lösten wir ein Tutorial um zu lernen, wie
+							genau das funktioniert. <br> Als Abschluss besprachen wir noch die Unterrichtsbeurteilung, welche sehr positiv ausfiel. Und damit ist dieses Modul
+							auch schon beendet.</p>
 							
-							<p>Nach dem halben Unterrichtstag experimentierte ich selbst noch mit dem Query Service herum. Ich überlegte mir ein einfaches
-							Thema, zu dem es nicht unendlich viele Treffer gibt. Da ich im Moment des Schreibens dieses Artikels mit dem Zug unterwegs bin
-							und die Dame gegenüber ein Buch über Queen Elizabeth liest, inspirierte mich das dazu die Daten der Britischen Königsfamilie
-							etwas genauer anzusehen.<span class="image left"><img src="images/wikidata_query_1.jpg" alt="SPARQL Design" /></span> Mit der Hilfe
-							des Abfragehelfers ist es auch gar nicht so schwierig, die richtigen Begriffe und Werte einzugeben. Ich suchte also zuerst nach der
-							Britischen Königsfamilie und filterte die männlichen Mitglieder raus. Zusätzlich liess ich mir das Geburtsdatum anzeigen.
-							<span class="image right"><img src="images/wikidata_query_2.jpg" alt="Ergebnisliste" /></span></p>
+							<p>Nach dem halben Unterrichtstag experimentierte ich später selbst noch mit dem Query Service herum.
+							Da ich absolut keine Ahnung hatte, nach was ich in Wikidata suchen könnte – wie immer, wenn einem alle Möglichkeiten
+							offen stehen – liess ich mich von meiner Umgebung inspirieren. Da ich im Zug sass, sah ich mich ein bisschen um. Eine
+							Frau schräg gegenüber von mir las ein Magazin, die Titelstory bildete den Buckingham Palace ab. Also suchte ich in
+								<span class="image left"><img src="images/wikidata_query_1.jpg" alt="" /></span>
+							Wikidata nach Queen Elizabeth II. und fand heraus, dass man nach der ganzen britischen Königsfamilie suchen kann. Dazu
+							wollte ich nur die weiblichen Mitglieder und deren Geburtsdatum sehen.
+								<span class="image right"><img src="images/wikidata_query_2.jpg" alt="" /></span></p>
 							
-							<p>Ich kannte den Query Service von Wikidata bisher nicht. Alles was ich mit Wikidata bisher gemacht habe beläuft sich auf die normale
-							Wikidata-Suche. Dieses Tool ist jedoch sehr nützlich und eine einfache Möglichkeit, eine grosse Menge an frei zugänglichen Daten zu
-							durchsuchen. Jedoch muss man einfach eine gewisse Vorsicht betreffend der Qualität der Daten behalten, wie bei Wikipedia ja auch.</p>
+							<p>Interessanterweise, wenn man die Query mehrmals verändert, verändern sich auch die Ergebnisse. In einem zweiten Schritt
+							suchte ich nach der britischen Königsfamilie, Geburtsdatum und dem Geburtsort. Mir wurde eine unvollständige Liste
+							angezeigt (die jüngsten Mitglieder fehlten). Als ich dann den Filter weiblich wieder einfügte, tauchten diese dann
+							plötzlich auf. Wieder herausgenommen, wird mir plötzlich eine Ergebnisliste von allen angezeigt aber noch zusätzlich mit
+							den weiteren Titeln der Queen (vermute ich).
+								<span class="image right"><img src="images/wikidata_query_3.jpg" alt="" /></span></p>
+							
+							<p>Wenn man nur nach Königsfamilie sucht, werden nicht alle Königsfamilien aus Europa angezeigt, dafür aber bereits
+							untergegangene Dynastien. Fügt man bei der Anzeige «besteht aus» hinzu, werden alle Mitglieder der schwedischen
+							Königsfamilie angezeigt, einige wenige der britischen (obwohl sie im Wikidata-Eintrag alle in der «has part» Tabelle
+							stehen) und alle andern sind weg. Beispielsweise die dänische Königsfamilie hat auch eine Liste aller Mitglieder, sie
+							werden aber nicht angezeigt. Am Limit liegt es nicht, als Test habe ich 500 eingestellt, ergab gleich viele Ergebnisse
+							wie mit 100. Füge ich jedoch den Filter Staat – Dänemark ein, werden alle 15 Mitglieder angezeigt.
+								<span class="image left"><img src="images/wikidata_query_4.jpg" alt="" /></span>
+							Obwohl ich mir diese unterschiedlichen Anzeigen nicht erklären kann, finde ich die Wikidata Query sehr faszinierend und
+							es macht Spass, damit herum zu probieren und testen, was möglich ist und was nicht.
+								<span class="image right"><img src="images/wikidata_query_5.jpg" alt="" /></span></p>
 							
 							
 						</div>
